@@ -24,7 +24,7 @@ body {
 }
 
 header {
-    background-image: url('../images/zwart-wit-hokje.jpg');
+    background-image: url('./images/zwart-wit-hokje.jpg');
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -95,7 +95,7 @@ header img {
 /* HOKJES_______________________________________________________________________________________________ */
 
 .hokjes {
-background-image: url('../images/vlinder.jpg');
+background-image: url('./images/vlinder.jpg');
 }
 
 .hokjes p { 
@@ -109,7 +109,7 @@ background-image: url('../images/vlinder.jpg');
 }
 
 main {
-   background-image: url('../images/patroon-achtergrond.svg')
+   background-image: url('./images/patroon-achtergrond.svg')
 }
 
 
@@ -148,7 +148,7 @@ main article h1, p {
 
 
 .steden {
-    background-image: url('../images/bij1.jpg');
+    background-image: url('./images/bij1.jpg');
 }
 
 .steden p { 
