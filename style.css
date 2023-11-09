@@ -1,23 +1,38 @@
 
 @import url('https://fonts.cdnfonts.com/css/hanson');
-@font-face {   font-family: 'Heiti TC';   src: url('fontheiti-tc.woff2') format('woff2'),        url('heiti-tc.woff') format('woff'); }
-                
-/* HOME_______________________________________________________________________________________________ */
-
-
-* {
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(20, 20, 20);
-} 
+@font-face {
+    font-family: 'Hanson-Bold';
+    src: url('./fonts/Hanson-Bold.ttf'),;
+}
+@font-face {   
+    font-family: 'Heiti TC';   
+    src: url('fontheiti-tc.woff2') format('woff2'),        
+    url('heiti-tc.woff') format('woff');
+}
 
 @font-face {
     font-family: 'Courier New', Courier, monospace;
     src: url();
-}
+} 
+
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 0, 102);
+} 
+
+/* KLEUREN */
+/* background-color: #99bd05; Licht groen */
+/* background-color: #236130; donker groen */
+/* background-color: #f2e9cc; Beige */
+/* background-color: ##df3890; roze */
+                
+/* HOME_______________________________________________________________________________________________ */
 
 html,
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     background-color:#f2e9cc
@@ -51,21 +66,21 @@ nav a {
     color: #236130;
     padding: 1em 1.6em 1em 1.6em;
     border-radius: 1em 0 0 1em;
-    font-family: 'hanson', sans-serif;    
+    font-family: 'Hanson-Bold';
     font-size: small;                                     
     background-color: #99bd05;
     display: block;
     text-align: left;
 }
+
 .roze{
     color: #f2e9cc;
     background-color:  #df3890;
 }
 
-header img {
+.index img {
    margin: 0 auto;
    margin-top: 6em;
- 
 }
 
 .index p{
@@ -77,13 +92,6 @@ header img {
     margin-top: -0.4em;
 }
 
-/* KLEUREN */
-/* background-color: #99bd05; Licht groen */
-/* background-color: #236130; donker groen */
-/* background-color: #f2e9cc; Beige */
-/* background-color: ##df3890; roze */
-
-
 /* HOKJES_______________________________________________________________________________________________ */
 
 .hokjes {
@@ -91,15 +99,10 @@ background-image: url('./images/vlinder.jpg');
 }
 
 .hokjes p { 
-    /* font-family: 'Heiti TC', sans-serif; */
     font-family: 'Josefin Sans', sans-serif;
-    /* font-family: 'Source Sans 3', sans-serif; */
     line-height: 1.5em;
     font-size: 0.7em;
     letter-spacing: 0.04em;
-
-
-
     background-color: #236130;
     color: #f2e9cc;
     text-align: center;
@@ -108,21 +111,23 @@ background-image: url('./images/vlinder.jpg');
     border-radius: 16% 16% 0% 0%;
 }
 
-/* image {
-    display: flex;
-    justify-content: left;
-} */
+.hokjes img {
+    position: absolute;
+    width: 6em;
+    height: 5em;
+}
 
 main {
    background-image: url('./images/patroon-achtergrond.svg')
 }
 
-
 section {
     display: block;
     justify-content: center;
 }
+
 main section img {
+    object-fit: cover;
     width: 46vh;
     height: 64vw;
     margin: 2em 2em 0em 2em;
@@ -146,28 +151,25 @@ main article h1, p {
 
 main article h1 {
     font-size: 1em;
-    font-family: 'hanson', sans-serif; 
+    font-family: 'Hanson-Bold'; 
+    letter-spacing: 0.06em;
 }
 
 main article p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-
-
-
-
-
+p {
+    font-family: 'Josefin Sans', sans-serif;  
+}
 
 /* STEDEN_______________________________________________________________________________________________ */
-
 
 .steden {
     background-image: url('./images/bij1.jpg');
 }
 
 .steden p { 
-    /* font-family: 'Heiti TC', sans-serif; */
     font-family: 'Josefin Sans', sans-serif;
     line-height: 1.5em;
     font-size: 0.7em;
@@ -180,25 +182,21 @@ main article p {
     border-radius: 16% 16% 0% 0%;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* FOOTER_______________________________________________________________________________________________ */
-footer {
-background-color:#f2e9cc;
-margin-top: -2em;
+.steden img {
+    position: absolute;
+    width: 6em;
+    height: 5em;
 }
 
+/* FOOTER_______________________________________________________________________________________________ */
+
+footer {
+background-color:#f2e9cc;
+width: 100%;
+}
 
 footer p {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: x-small;
+    font-size: xx-small;
 }
